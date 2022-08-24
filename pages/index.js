@@ -2,10 +2,14 @@ import { useState } from "react";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import InCommon from "../components/InCommon";
-
+import MapsAndSet from "../components/MapsAndSet";
 export default function Home() {
   const [count, setCount] = useState(1);
-
+  const mapsAndSetDetails = [
+    "Maps: Holds key-value pairs, the key can be any data type.",
+    "Map remembers the original insertion order of the keys.",
+    "Can use `size` to get the number of Map elements.",
+  ];
   return (
     <div className="p-4">
       <style jsx>{`
@@ -25,10 +29,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="main">
-        <InCommon
+        {/* <InCommon
           title="Do We Have Anything In Common?"
           description="Checks both arrays, returns true if they have an element has a shared value."
-        />
+        /> */}
+        <MapsAndSet title="Maps &amp; Sets" descriptions={mapsAndSetDetails} />
       </div>
       <Footer />
     </div>
