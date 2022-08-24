@@ -9,6 +9,10 @@ const MapsAndSet = ({ title, descriptions }) => {
   console.log(COUNTRIES_MAP);
   COUNTRIES_MAP.set(putin, "🇷🇺");
   console.log(COUNTRIES_MAP.get(putin));
+  console.log(`Has Israel? ${COUNTRIES_MAP.has("Israel")}`);
+  console.log(`Has Trinidad? ${COUNTRIES_MAP.has("Trinidad")}`);
+
+  console.log(COUNTRIES_MAP.keys()); // Empty, returns iterator
 
   const numbersArray = [11, 12, 88, 41, 87, 5, 7, 11, 12, 88, 41, 87, 5, 7];
 

@@ -9,6 +9,11 @@ export default function Home() {
     "Maps: Holds key-value pairs, the key can be any data type.",
     "Map remembers the original insertion order of the keys.",
     "Can use `size` to get the number of Map elements.",
+    "Ordering: Keys are ordered based off of when they were added to the Map (similar to array).",
+    "Iterating: Maps have a built in iterator. Which means you can use methods like `forEach`.",
+    "Length: Use size property.",
+    "Performance: Maps are designed w/ functionality of being a lookup table / dictionary.",
+    "Great choice for adding & removing of key/value pairs.",
   ];
   return (
     <div className="p-4">
