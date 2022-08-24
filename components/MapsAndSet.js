@@ -18,6 +18,11 @@ const MapsAndSet = ({ title, descriptions }) => {
   uniqueNumbers.delete(5);
   console.log(uniqueNumbers);
 
+  // Can check if has duplicates:
+  if (numbersArray.length === uniqueNumbers.size) {
+    console.log("Has 0 duplicates");
+  } else console.log("Has duplicates...");
+
   return (
     <section className="flex flex-col ">
       <h1 className="title text-4xl">{title}</h1>
